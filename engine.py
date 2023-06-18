@@ -33,7 +33,7 @@ class Engine():
     def run(self):
         #print("Program Running")
         for item in self.birthday_dict:
-            if item['month'] == 6 and item['day'] == 17:
+            if item['month'] == self.now.month and item['day'] == self.now.day:
                 #print("Today is your birthday!")
                 birthday_person = item['name']
                 print(f"Today is your birthday, {birthday_person}!")
